@@ -104,3 +104,17 @@ df0349,127.0.0.1,GET,http://localhost:8000/,1487678751,,200
 e59b01,127.0.0.1,GET,http://localhost:8000/,1487679900,,200
 dfc40e,127.0.0.1,GET,http://localhost:8000/todos/details/1,1487679913,,200
 9c8e17,127.0.0.1,GET,http://localhost:8000/,1487679914,,200
+deba77,127.0.0.1,GET,http://localhost:8000/,1487680512,,200
+e866a5,127.0.0.1,GET,http://localhost:8000/todos/details/1,1487680518,,200
+eb9556,127.0.0.1,GET,http://localhost:8000/,1487680522,,200
+11d16a,127.0.0.1,GET,http://localhost:8000/,1487680639,,200
+2225b0,127.0.0.1,GET,http://localhost:8000/todos/delete/1,1487680646,5cd0bd,200
+5cd0bd,127.0.0.1,GET,http://localhost:8000/todos/delete/1,1487680646,,404
+a49090,127.0.0.1,GET,http://localhost:8000/,1487680652,,200
+538795,127.0.0.1,GET,http://localhost:8000/todos/delete/1,1487680655,bb8095,200
+bb8095,127.0.0.1,GET,http://localhost:8000/todos/delete/1,1487680655,,404
+126e34,127.0.0.1,GET,http://localhost:8000/todos/delete/1,1487680841,4249db,200
+4249db,127.0.0.1,GET,http://localhost:8000/todos/delete/1,1487680841,,500
+cb5b55,127.0.0.1,GET,http://localhost:8000/todos/delete/1,1487680893,,302
+1ddad0,127.0.0.1,GET,http://localhost:8000/,1487680893,,200
+e17bee,127.0.0.1,GET,http://localhost:8000/,1487680898,,200

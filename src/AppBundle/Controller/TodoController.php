@@ -108,4 +108,26 @@ class TodoController extends Controller
             'todo' => $todos
         ));
     }
+
+     /**
+     * @Route("/todos/delete/{id}", name="todo_delete")
+     */ 
+    public function deleteAction($id)
+    {
+        
+         $sn = $this->getDoctrine()->getManager();
+         $todo = $sn->getRepository('AppBundle:Todo')->find($id);
+         
+         $sn->remove($todo);
+         $sn->flush();
+        //  $todos = $this->getDoctrine()
+        // ->getRepository('AppBundle:Todo')
+        // ->find($id);
+        
+         $this->addFlash(
+                'notice',
+                'Todo Removed'
+            );
+          return $this->redirectToRoute('todo_list');             
+    }
 }

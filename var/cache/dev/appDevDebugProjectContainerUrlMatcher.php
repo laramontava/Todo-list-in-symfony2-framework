@@ -125,9 +125,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return array (  '_controller' => 'AppBundle\\Controller\\TodoController::createAction',  '_route' => 'todo_create',);
             }
 
-            // todo_details
-            if (0 === strpos($pathinfo, '/todos/details') && preg_match('#^/todos/details/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'todo_details')), array (  '_controller' => 'AppBundle\\Controller\\TodoController::detailsAction',));
+            if (0 === strpos($pathinfo, '/todos/de')) {
+                // todo_details
+                if (0 === strpos($pathinfo, '/todos/details') && preg_match('#^/todos/details/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'todo_details')), array (  '_controller' => 'AppBundle\\Controller\\TodoController::detailsAction',));
+                }
+
+                // todo_delete
+                if (0 === strpos($pathinfo, '/todos/delete') && preg_match('#^/todos/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'todo_delete')), array (  '_controller' => 'AppBundle\\Controller\\TodoController::deleteAction',));
+                }
+
             }
 
         }
